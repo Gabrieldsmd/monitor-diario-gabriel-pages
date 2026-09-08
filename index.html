@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boletim Diario - 07/09/2026 22:28</title>
+<title>Boletim Diario - 08/09/2026 02:52</title>
 <style>
   * { box-sizing: border-box; }
   body {
@@ -71,7 +71,7 @@
 <body>
 <div class="wrapper">
   <h1>Boletim Diario</h1>
-  <div class="data">Atualizado em 07/09/2026 22:28</div>
+  <div class="data">Atualizado em 08/09/2026 02:52</div>
   <details><summary>Todos os Eventos Appai (lista completa)</summary><div class="conteudo-fonte">
     <style>
       .categoria-appai { margin: 10px 0; border: 1px solid #d9e2ef; border-radius: 14px; padding: 10px 16px; background: #fafcff; }
@@ -87,9 +87,46 @@
       .evento-elegivel { color: #15803d; font-size: 0.9rem; margin-top: 6px; }
       .evento-doacao, .evento-premio { font-size: 0.9rem; color: #5e6f82; margin-top: 4px; }
       .evento-botoes { margin-top: 10px; }
+      .lightbox-appai-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.75);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        cursor: zoom-out;
+      }
+      .lightbox-appai-overlay.aberto { display: flex; }
+      .lightbox-appai-img {
+        max-width: 92vw;
+        max-height: 92vh;
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      }
     </style>
-    <details class="categoria-appai"><summary style="color:#7c3aed;font-weight:bold;">Agitô (5 evento(s) - atualizado em 2026-09-07 19:35)</summary><div class="categoria-conteudo"><div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2020/11/appai-beneficio-agito-rio-scenarium-parceiro-appai-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2020/11/appai-beneficio-agito-rio-scenarium-parceiro-appai-calendario.jpg" alt="Eventos Noturnos Rio Scenarium" loading="lazy"></a>
+    <script>
+      function abrirLightboxAppai(url) {
+        var overlay = document.getElementById('lightbox-appai-overlay');
+        if (!overlay) {
+          overlay = document.createElement('div');
+          overlay.id = 'lightbox-appai-overlay';
+          overlay.className = 'lightbox-appai-overlay';
+          overlay.onclick = function () { overlay.classList.remove('aberto'); };
+          var img = document.createElement('img');
+          img.id = 'lightbox-appai-img';
+          img.className = 'lightbox-appai-img';
+          overlay.appendChild(img);
+          document.body.appendChild(overlay);
+        }
+        document.getElementById('lightbox-appai-img').src = url;
+        overlay.classList.add('aberto');
+      }
+    </script>
+    <details class="categoria-appai"><summary style="color:#7c3aed;font-weight:bold;">Agitô (4 evento(s) - atualizado em 2026-09-08 02:51)</summary><div class="categoria-conteudo"><div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2020/11/appai-beneficio-agito-rio-scenarium-parceiro-appai-calendario.jpg" alt="Eventos Noturnos Rio Scenarium" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2020/11/appai-beneficio-agito-rio-scenarium-parceiro-appai-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Eventos Noturnos Rio Scenarium</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
@@ -98,20 +135,12 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-agito-ginga-tropical-fotos-2-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-agito-ginga-tropical-fotos-2-calendario.jpg" alt="Ginga Tropical" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-agito-ginga-tropical-fotos-2-calendario.jpg" alt="Ginga Tropical" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-agito-ginga-tropical-fotos-2-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Ginga Tropical</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
 <div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/appai-agito/experiencias-folclore-ginga-tropical/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/agito" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
-<div class="evento-info">
-<div class="evento-titulo">Appaixonados: A Festa!</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://associado.appai.org.br/agito" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
@@ -130,20 +159,44 @@
 <div class="evento-botoes"><a href="https://associado.appai.org.br/agito" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div></div></details>
-<details class="categoria-appai"><summary style="color:#dc2626;font-weight:bold;">Bom Espetáculo (20 evento(s) - atualizado em 2026-09-07 19:35)</summary><div class="categoria-conteudo"><div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2021/10/appai-bom-espetaculo-a-diretora-e-uma-comedia-com-diogo-bonfim-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/10/appai-bom-espetaculo-a-diretora-e-uma-comedia-com-diogo-bonfim-calendario.jpg" alt="A Diretora é Uma Comédia | Com Diogo Bonfim" loading="lazy"></a>
+<details class="categoria-appai"><summary style="color:#dc2626;font-weight:bold;">Bom Espetáculo (34 evento(s) - atualizado em 2026-09-08 02:51)</summary><div class="categoria-conteudo"><div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/10/appai-bom-espetaculo-a-diretora-e-uma-comedia-com-diogo-bonfim-calendario.jpg" alt="A Diretora é Uma Comédia | Com Diogo Bonfim" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2021/10/appai-bom-espetaculo-a-diretora-e-uma-comedia-com-diogo-bonfim-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">A Diretora é Uma Comédia | Com Diogo Bonfim</div>
 <div class="evento-tag">cidade: São Gonçalo</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/a-diretora-e-uma-comedia-3-4/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
 <div class="evento-info">
-<div class="evento-titulo">João e Maria</div>
+<div class="evento-titulo">Era uma Vez | O Despertar do Tempo</div>
+<div class="evento-tag">cidade: São Gonçalo</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Discutindo a Relação</div>
 <div class="evento-tag">cidade: Niterói</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Romeu e Julieta, Cordel de Ariano Suassuna</div>
+<div class="evento-tag">cidade: Niterói</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">De Repente, Nós! | Com Andréa Veiga e Ricardo Duque</div>
+<div class="evento-tag">cidade: Niterói</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -151,34 +204,33 @@
 <div class="evento-info">
 <div class="evento-titulo">KD o Show | Com Daniel Lopes e Kwesny</div>
 <div class="evento-tag">cidade: Niterói</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2026/07/appai-beneficio-bom-espetaculoa-Minha-Estrela-Dalva-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2026/07/appai-beneficio-bom-espetaculoa-Minha-Estrela-Dalva-calendario.jpg" alt="Minha Estrela Dalva | Com Soraya Ravenle e Renato Borghi" loading="lazy"></a>
 <div class="evento-info">
-<div class="evento-titulo">Minha Estrela Dalva | Com Soraya Ravenle e Renato Borghi</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/minha-estrela-dalva/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+<div class="evento-titulo">Brincando com Bento e Totó</div>
+<div class="evento-tag">cidade: Niterói</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2025/05/appai-beneficio-bom-espetaculo-van-furlanetti-em-relatos-de-viagem-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/05/appai-beneficio-bom-espetaculo-van-furlanetti-em-relatos-de-viagem-calendario.jpg" alt="Van Furlanetti em Relatos de Viagem" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/05/appai-beneficio-bom-espetaculo-van-furlanetti-em-relatos-de-viagem-calendario.jpg" alt="Van Furlanetti em Relatos de Viagem" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2025/05/appai-beneficio-bom-espetaculo-van-furlanetti-em-relatos-de-viagem-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Van Furlanetti em Relatos de Viagem</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/van-furlanetti-em-relatos-de-viagem-1x/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-bom-espetaculo-felipe-ferreira-o-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-bom-espetaculo-felipe-ferreira-o-calendario.jpg" alt="Felipe Ferreira | Show Novo de Comédia" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-bom-espetaculo-felipe-ferreira-o-calendario.jpg" alt="Felipe Ferreira | Show Novo de Comédia" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2024/08/appai-beneficio-bom-espetaculo-felipe-ferreira-o-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Felipe Ferreira | Show Novo de Comédia</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-bloqueado">⛔ Bloqueado: Você já participou de 'Felipe Ferreira | Show Novo de Comédia' em 17/07/2026. Regra do benefício exige 365 dias entre repetições - faltam 313 dias.</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/felipe-ferreira-show-novo-2/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -186,7 +238,7 @@
 <div class="evento-info">
 <div class="evento-titulo">Os Ciclomáticos | Sobre Mentiras e Segredos</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -194,33 +246,42 @@
 <div class="evento-info">
 <div class="evento-titulo">Mar de Girassóis | Com Giuseppe Oristanio e Izabella Bicalho</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2025/08/appai-beneficio-bom-espetaculo-a-dona-dos-raios-e-do-vento-calendario-1.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/08/appai-beneficio-bom-espetaculo-a-dona-dos-raios-e-do-vento-calendario-1.jpg" alt="A Dona dos Raios e do Vento" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/08/appai-beneficio-bom-espetaculo-a-dona-dos-raios-e-do-vento-calendario-1.jpg" alt="A Dona dos Raios e do Vento" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2025/08/appai-beneficio-bom-espetaculo-a-dona-dos-raios-e-do-vento-calendario-1.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">A Dona dos Raios e do Vento</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/a-dona-dos-raios-e-do-vento/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2026/07/appai-beneficio-bom-espetaculoa-Minha-Estrela-Dalva-calendario.jpg" alt="Minha Estrela Dalva | Com Soraya Ravenle e Renato Borghi" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2026/07/appai-beneficio-bom-espetaculoa-Minha-Estrela-Dalva-calendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Minha Estrela Dalva | Com Soraya Ravenle e Renato Borghi</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/minha-estrela-dalva/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
 <div class="evento-info">
 <div class="evento-titulo">Os Saltimbancos</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2025/12/appai-beneficio-bom-espetaculo-k-pop-dream-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/12/appai-beneficio-bom-espetaculo-k-pop-dream-calendario.jpg" alt="K-Pop Dreams" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/12/appai-beneficio-bom-espetaculo-k-pop-dream-calendario.jpg" alt="K-Pop Dreams" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2025/12/appai-beneficio-bom-espetaculo-k-pop-dream-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">K-Pop Dreams</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/k-pop-dreams/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -228,15 +289,7 @@
 <div class="evento-info">
 <div class="evento-titulo">Otávio Almeida Canta Cauby</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
-<div class="evento-info">
-<div class="evento-titulo">Discutindo a Relação</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -244,7 +297,7 @@
 <div class="evento-info">
 <div class="evento-titulo">EscolinhaZinha do Professor Raymundo | O Musical</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -252,7 +305,7 @@
 <div class="evento-info">
 <div class="evento-titulo">Filho da Mãe</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -260,15 +313,82 @@
 <div class="evento-info">
 <div class="evento-titulo">Zé Petit e Minduin</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">50 Anos Depois</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2026/07/appai-beneficio-bom-espetaculo-Normal-So-Que-Nao-calendario.jpg" alt="Normal Só Que Não" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2026/07/appai-beneficio-bom-espetaculo-Normal-So-Que-Nao-calendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Normal Só Que Não</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/normal-so-que-nao/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Princesas e Heróis</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/06/appai-bom-espetaculo-a-arca-de-noe-ops-dos-bichoscalendario.jpg" alt="A Arca de Noé, Ops... dos Bichos!" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2025/06/appai-bom-espetaculo-a-arca-de-noe-ops-dos-bichoscalendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">A Arca de Noé, Ops... dos Bichos!</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/a-arca-de-noe-ops-dos-bichos/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
 <div class="evento-info">
 <div class="evento-titulo">Não Pisque | Com Lucas Toledo</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Bonfim Comedy Show | Com Diogo Bonfim</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2025/02/appai-beneficio-bom-espetaculoa-moana-um-mar-de-aventura-calendario.jpg" alt="Moana | Um Mar de Aventuras" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2025/02/appai-beneficio-bom-espetaculoa-moana-um-mar-de-aventura-calendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Moana | Um Mar de Aventuras</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/bom-espetaculo/moana-um-mar-de-aventura/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Noite de Improviso da Casa | Com Gigante Léo, Matheus Mad e Luiz Felipe Martins</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Extraviado 3.0 | Rindo Sem Desligar o Cérebro</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -276,7 +396,23 @@
 <div class="evento-info">
 <div class="evento-titulo">Chapeuzinho Vermelho e a Floresta Encantada</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Amor I Love You | Tributo a Marisa Monte</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Fala Que Eu Te Julgo | Com Henrique PC</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -284,7 +420,15 @@
 <div class="evento-info">
 <div class="evento-titulo">Renúncia</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Gonzaguinha, O Eterno Aprendiz | Edição Especial 80 Anos</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
@@ -292,19 +436,11 @@
 <div class="evento-info">
 <div class="evento-titulo">As Aventuras de Quitapena</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-bloqueado">⛔ Bloqueado: Bloqueio por não comparecimento em 'Felipe Ferreira | Show Novo de Comédia' (17/07/2026). Regulamento (seção 4) exige 60 dias de bloqueio - faltam 7 dias, libera em 15/09/2026.</div>
 <div class="evento-botoes"><a href="https://associado.appai.org.br/bom-espetaculo" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div></div></details>
-<details class="categoria-appai"><summary style="color:#16a34a;font-weight:bold;">Caminhadas e Corridas (2 evento(s) - atualizado em 2026-09-07 19:35)</summary><div class="categoria-conteudo"><div class="evento-card">
-<div class="evento-info">
-<div class="evento-titulo">7ª Meia Maratona da Reserva 2026</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://associado.appai.org.br/caminhadas-e-corridas" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
+<details class="categoria-appai"><summary style="color:#16a34a;font-weight:bold;">Caminhadas e Corridas (1 evento(s) - atualizado em 2026-09-08 02:52)</summary><div class="categoria-conteudo"><div class="evento-card">
 <div class="evento-info">
 <div class="evento-titulo">Circuito Longevidade Appai - Set/2026</div>
 <div class="evento-tag">remoto</div>
@@ -312,13 +448,31 @@
 <div class="evento-botoes"><a href="https://associado.appai.org.br/caminhadas-e-corridas" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div></div></details>
-<details class="categoria-appai"><summary style="color:#0891b2;font-weight:bold;">Passeio Cultural (15 evento(s) - atualizado em 2026-09-07 19:36)</summary><div class="categoria-conteudo"><div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2022/07/appai-beneficio-passeio-cultural-quando-niteroi-a-cidade-sorriso-a-cidade-sorriso-museu-de-arte-contemporanea-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/07/appai-beneficio-passeio-cultural-quando-niteroi-a-cidade-sorriso-a-cidade-sorriso-museu-de-arte-contemporanea-calendario.jpg" alt="Todo o Rio Tem História: Niterói, A Cidade Sorriso" loading="lazy"></a>
+<details class="categoria-appai"><summary style="color:#0891b2;font-weight:bold;">Passeio Cultural (16 evento(s) - atualizado em 2026-09-08 02:52)</summary><div class="categoria-conteudo"><div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/07/appai-beneficio-passeio-cultural-quando-niteroi-a-cidade-sorriso-a-cidade-sorriso-museu-de-arte-contemporanea-calendario.jpg" alt="Todo o Rio Tem História: Niterói, A Cidade Sorriso" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2022/07/appai-beneficio-passeio-cultural-quando-niteroi-a-cidade-sorriso-a-cidade-sorriso-museu-de-arte-contemporanea-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Todo o Rio Tem História: Niterói, A Cidade Sorriso</div>
 <div class="evento-tag">cidade: Niterói</div>
 <div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/niteroi-a-cidade-sorriso-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-aquario-calendario.jpg" alt="Passeio AquaRio" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-aquario-calendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Passeio AquaRio</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/aquario-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/06/appai-beneficio-passeio-cultural-lagoa-aventuras-no-parque-da-catacumba-imagem-2-calendario.jpg" alt="Passeio Lagoa Aventuras, no Parque da Catacumba" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2022/06/appai-beneficio-passeio-cultural-lagoa-aventuras-no-parque-da-catacumba-imagem-2-calendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Passeio Lagoa Aventuras, no Parque da Catacumba</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/lagoa-aventuras-no-parque-da-catacumba-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
@@ -338,7 +492,7 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2021/05/appai-beneficio-passeio-cultural-roteiro-pao-de-acucar-calendario-2.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/05/appai-beneficio-passeio-cultural-roteiro-pao-de-acucar-calendario-2.jpg" alt="Passeio Parque Bondinho Pão de Açúcar" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/05/appai-beneficio-passeio-cultural-roteiro-pao-de-acucar-calendario-2.jpg" alt="Passeio Parque Bondinho Pão de Açúcar" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2021/05/appai-beneficio-passeio-cultural-roteiro-pao-de-acucar-calendario-2.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio Parque Bondinho Pão de Açúcar</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
@@ -347,34 +501,7 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2026/06/appai-beneficio-passeio-cultural-rio-samba-bus-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2026/06/appai-beneficio-passeio-cultural-rio-samba-bus-calendario.jpg" alt="Passeio Rio Samba Bus" loading="lazy"></a>
-<div class="evento-info">
-<div class="evento-titulo">Passeio Rio Samba Bus</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/rio-samba-bus-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-aquario-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-aquario-calendario.jpg" alt="Passeio AquaRio" loading="lazy"></a>
-<div class="evento-info">
-<div class="evento-titulo">Passeio AquaRio</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/aquario-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2022/06/appai-beneficio-passeio-cultural-lagoa-aventuras-no-parque-da-catacumba-imagem-2-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/06/appai-beneficio-passeio-cultural-lagoa-aventuras-no-parque-da-catacumba-imagem-2-calendario.jpg" alt="Passeio Lagoa Aventuras, no Parque da Catacumba" loading="lazy"></a>
-<div class="evento-info">
-<div class="evento-titulo">Passeio Lagoa Aventuras, no Parque da Catacumba</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/lagoa-aventuras-no-parque-da-catacumba-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2021/06/appai-passeio-cultural-torn-na-baia-de-guanabara-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/06/appai-passeio-cultural-torn-na-baia-de-guanabara-calendario.jpg" alt="Passeio Tour Baía de Guanabara" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/06/appai-passeio-cultural-torn-na-baia-de-guanabara-calendario.jpg" alt="Passeio Tour Baía de Guanabara" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2021/06/appai-passeio-cultural-torn-na-baia-de-guanabara-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio Tour Baía de Guanabara</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
@@ -383,7 +510,7 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2022/09/Calendario-1.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/09/Calendario-1.jpg" alt="Passeio BioParque do Rio" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/09/Calendario-1.jpg" alt="Passeio BioParque do Rio" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2022/09/Calendario-1.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio BioParque do Rio</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
@@ -392,7 +519,16 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-outeiro-da-gloria-e-museu-da-republica-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-outeiro-da-gloria-e-museu-da-republica-calendario.jpg" alt="Passeio Outeiro da Glória e Museu da República" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2026/06/appai-beneficio-passeio-cultural-rio-samba-bus-calendario.jpg" alt="Passeio Rio Samba Bus" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2026/06/appai-beneficio-passeio-cultural-rio-samba-bus-calendario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Passeio Rio Samba Bus</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/rio-samba-bus-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-outeiro-da-gloria-e-museu-da-republica-calendario.jpg" alt="Passeio Outeiro da Glória e Museu da República" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2023/06/appai-beneficio-passeio-cultural-outeiro-da-gloria-e-museu-da-republica-calendario.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio Outeiro da Glória e Museu da República</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
@@ -401,7 +537,7 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2021/03/appai-passeio-cultural-centro-do-rio-rota-iniciando-museu-de-artes-do-rio-calenadrio.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/03/appai-passeio-cultural-centro-do-rio-rota-iniciando-museu-de-artes-do-rio-calenadrio.jpg" alt="Passeio Centro Histórico do Rio" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/03/appai-passeio-cultural-centro-do-rio-rota-iniciando-museu-de-artes-do-rio-calenadrio.jpg" alt="Passeio Centro Histórico do Rio" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2021/03/appai-passeio-cultural-centro-do-rio-rota-iniciando-museu-de-artes-do-rio-calenadrio.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio Centro Histórico do Rio</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
@@ -410,12 +546,20 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2022/04/appai-beneficio-passeio-cultural-passeio-ecologico-lagoa-de-marapendi-calendario-2.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/04/appai-beneficio-passeio-cultural-passeio-ecologico-lagoa-de-marapendi-calendario-2.jpg" alt="Passeio Ecológico Lagoa de Marapendi" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/04/appai-beneficio-passeio-cultural-passeio-ecologico-lagoa-de-marapendi-calendario-2.jpg" alt="Passeio Ecológico Lagoa de Marapendi" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2022/04/appai-beneficio-passeio-cultural-passeio-ecologico-lagoa-de-marapendi-calendario-2.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio Ecológico Lagoa de Marapendi</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
 <div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/passeio-ecologico-lagoa-de-marapendi-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<div class="evento-info">
+<div class="evento-titulo">Passeio do Largo do Machado ao Catete</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-botoes"><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div>
 <div class="evento-card">
@@ -427,21 +571,21 @@
 </div>
 </div>
 <div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2021/04/appai-passeio-cultural-aterro-do-flamengo-calendario-2.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/04/appai-passeio-cultural-aterro-do-flamengo-calendario-2.jpg" alt="Passeio Aterro do Flamengo" loading="lazy"></a>
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/12/appai-passeio-cultural-roteiro-18-gamboa-circuito-pequena-africa-caledario.jpg" alt="Passeio Pequena África" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2022/12/appai-passeio-cultural-roteiro-18-gamboa-circuito-pequena-africa-caledario.jpg')">
+<div class="evento-info">
+<div class="evento-titulo">Passeio Pequena África</div>
+<div class="evento-tag">cidade: Rio de Janeiro</div>
+<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
+<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/pequena-africa-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
+</div>
+</div>
+<div class="evento-card">
+<img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2021/04/appai-passeio-cultural-aterro-do-flamengo-calendario-2.jpg" alt="Passeio Aterro do Flamengo" loading="lazy" onclick="abrirLightboxAppai('https://www.appai.org.br/wp-content/uploads/2021/04/appai-passeio-cultural-aterro-do-flamengo-calendario-2.jpg')">
 <div class="evento-info">
 <div class="evento-titulo">Passeio Aterro do Flamengo</div>
 <div class="evento-tag">cidade: Rio de Janeiro</div>
 <div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
 <div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/aterro-do-flamengo-2/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
-</div>
-</div>
-<div class="evento-card">
-<a href="https://www.appai.org.br/wp-content/uploads/2022/06/appai-beneficio-passeio-cultural-caminho-de-tiradentes-calendario.jpg" target="_blank"><img class="evento-foto" src="https://www.appai.org.br/wp-content/uploads/2022/06/appai-beneficio-passeio-cultural-caminho-de-tiradentes-calendario.jpg" alt="Passeio Caminho de Tiradentes" loading="lazy"></a>
-<div class="evento-info">
-<div class="evento-titulo">Passeio Caminho de Tiradentes</div>
-<div class="evento-tag">cidade: Rio de Janeiro</div>
-<div class="evento-elegivel">✅ Você está elegível pra se inscrever</div>
-<div class="evento-botoes"><a href="https://www.appai.org.br/lazer/passeio-cultural/caminho-de-tiradentes-xxx/" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Mais informações</a><a href="https://associado.appai.org.br/passeio-cultural" target="_blank" style="display:inline-block;background:#f97316;color:#ffffff;font-weight:bold;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 8px 4px 0;font-size:0.9rem;">Inscrever-se</a></div>
 </div>
 </div></div></details></div></details>
 </div>
